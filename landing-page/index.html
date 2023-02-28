@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Mohith VPN</title>
+      <link rel="stylesheet" href="style.css">
+   </head>
+   <body>
+      <!-- Header -->
+      <header>
+         <div class="logo">
+            <img src="./assests/logo.svg" alt="Nova VPN Logo">
+         </div>
+         <nav>
+            <ul>
+               <li><a href="#">Home</a></li>
+               <li><a href="#">Features</a></li>
+               <li><a href="#">Pricing</a></li>
+               <li><a href="#">FAQs</a></li>
+               <li><a href="#">Contact</a></li>
+            </ul>
+         </nav>
+         <div class="cta">
+            <a href="#">Sign Up</a>
+            <a href="#">Log In</a>
+         </div>
+      </header>
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="hero-img">
+            <img src="./assests/cosmonaut1.svg" alt="" srcset="" id="hero-img">
+        </div>
+         <div class="hero-text">
+            <h1>Secure Your Internet Connection</h1>
+            <p>With Nova VPN, you can protect your privacy and enjoy unrestricted access to the web. Get started today.</p>
+            <a href="#" class="cta-btn">Sign Up Now</a>
+         </div>
+         
+      </section>
+      <!-- Features Section -->
+      <section class="features">
+         <h2>Why Choose Nova VPN?</h2>
+         <div class="top">
+            <div class="feature">
+                <img src="./assests/feature-aes-256.png" alt="Secure Icon">
+                <div>
+                   <h3>Secure</h3>
+                   <p>Our VPN uses the latest encryption technologies to keep your online activities safe and secure.</p>
+                </div>
+            </div>
+                <div class="feature">
+                   <img src="./assests/feature-highspeed.png" alt="Fast Icon">
+                   <div>
+                      <h3>Fast</h3>
+                      <p>Our servers are optimized for speed, ensuring fast and reliable connections at all times.</p>
+                   </div>
+                </div>
+                <div class="feature">
+                   <img src="./assests/feature-multiple-loggins.png" alt="Easy to Use Icon">
+                   <div>
+                      <h3>Easy to Use</h3>
+                      <p>Nova VPN is designed with simplicity in mind, making it easy for anyone to use.</p>
+                   </div>
+                </div>
+            </div>
+            <div class="top">
+                <div class="feature">
+                    <img src="./assests/feature-dns-leak-protection.png" alt="Easy to Use Icon">
+                    <div>
+                       <h3>Easy to Use</h3>
+                       <p>Nova VPN is designed with simplicity in mind, making it easy for anyone to use.</p>
+                    </div>
+                 </div>
+                 <div class="feature">
+                    <img src="./assests/feature-no-logging.png" alt="Easy to Use Icon">
+                    <div>
+                       <h3>Easy to Use</h3>
+                       <p>Nova VPN is designed with simplicity in mind, making it easy for anyone to use.</p>
+                    </div>
+                 </div>
+                 <div class="feature">
+                    <img src="./assests/feature-unlimited-server-changes.png" alt="Easy to Use Icon">
+                    <div>
+                       <h3>Easy to Use</h3>
+                       <p>Nova VPN is designed with simplicity in mind, making it easy for anyone to use.</p>
+                    </div>
+                 </div>
+             </div>
+      </section>
+      <!-- Pricing Section -->
+      <section class="pricing">
+         <h2>Choose Your Plan</h2>
+         <div class="plan">
+            <div class="plan-box">
+               <div class="plan-name">Basic</div>
+               <div class="img">
+                <img src="./assests/light_packet-1507095544360-removebg-preview.png" alt="" srcset="">
+               </div>
+               <div class="plan-price">$9.99</div>
+               <div class="plan-duration">Per Month</div>
+               <ul class="plan-features">
+                  <li>1 Device</li>
+                  <li>Unlimited Bandwidth</li>
+                  <li>24/7 Support</li>
+               </ul>
+               <a href="#" class="plan-cta">Get Started</a>
+            </div>
+            <div class="plan-box">
+               <div class="plan-name">Standard</div>
+               <img src="./assests/medium_package-1507095601661-removebg-preview.png" alt="" srcset="">
+               <div class="plan-price">$14.99</div>
+               <div class="plan-duration">Per Month</div>
+               <ul class="plan-features">
+                  <li>2 Devices</li>
+                  <li>Unlimited Bandwidth</li>
+                  <li>24/7 Support</li>
+               </ul>
+               <a href="#" class="plan-cta">Get Started</a>
+            </div>
+            <div class="plan-box">
+               <div class="plan-name">Premium</div>
+               <img src="./assests/best_offer-1507095609140-removebg-preview.png " alt="" srcset="">
+               <div class="plan-price">$19.99</div>
+               <div class="plan-duration">Per Month</div>
+               <ul class="plan-features">
+                  <li>5 Devices</li>
+                  <li>Unlimited Bandwidth</li>
+                  <li>24/7 Support</li>
+               </ul>
+               <a href="#" class="plan-cta">Get Started</a>
+            </div>
+         </div>
+      </section>
+      <!-- Footer -->
+      <footer>
+         <p>&copy; 2023 Mohith VPN. All Rights Reserved.</p>
+         <div class="footer-links">
+            <a href="#">Terms of Service</a>
+            <a href="#">Privacy Policy</a>
+         </div>
+      </footer>
+      <script>
+        var array = ["./assests/cosmonaut1.svg","./assests/main-slide-4.png"]
+        var carouselItems = document.getElementById('hero-img');
+        var currentIndex = 0;
+        var intervalId = setInterval(changeCarouselItem, 3000);
+
+        function changeCarouselItem() {
+            carouselItems.src=array[currentIndex]
+            currentIndex = (currentIndex + 1) % array.length;
+            console.log(array[currentIndex])
+        }
+
+      </script>
+   </body>
+</html>
